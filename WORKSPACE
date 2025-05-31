@@ -44,3 +44,12 @@ http_archive(
     sha256 = "712d77868b3152dd618c4d64faaddefcc5965f90f5de6e6dd1d5ddcd0be82d42",
     strip_prefix = "rules_cc-0.1.1",
 )
+
+# ImGui Backends
+http_archive(
+    name = "imgui_backends",
+    build_file = "@//vendor/imgui_backends:imgui_backends.BUILD",
+    sha256 = "a4c0c5c3c5c3c5c3c5c3c5c3c5c3c5c3c5c3c5c3c5c3c5c3c5c3c5c3c5c3c5c3",
+    strip_prefix = "imgui-1.89.9",
+    urls = ["https://github.com/ocornut/imgui/archive/v1.89.9.zip"],
+)

@@ -1,4 +1,8 @@
+#pragma once
+
+#include "core/LayerStack.h"
 #include "core/Application.h"
-#include "core/Entrypoint.h"
 #include "core/Log.h"
-#include "jni.h"
+
+
+#include "core/Entrypoint.h"

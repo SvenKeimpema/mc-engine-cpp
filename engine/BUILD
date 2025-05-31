@@ -12,8 +12,10 @@ cc_library(
     deps = [
         "//vendor/glfw",
         "//vendor/glm",
+        "//vendor/imgui_backends",
         "@spdlog//:spdlog",
         "@rules_vulkan//vulkan:vulkan_cc_library",
         "//vendor/jni:jni_headers",
+        "@imgui//:imgui"
     ],
 )

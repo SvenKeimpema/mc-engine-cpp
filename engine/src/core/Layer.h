@@ -1,6 +1,7 @@
 #pragma once
 
-#include "Syns.h"
+#include <string>
+#include "Core.h"
 
 namespace Syns {
     class SYNS_API Layer {

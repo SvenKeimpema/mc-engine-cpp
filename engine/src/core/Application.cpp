@@ -1,16 +1,17 @@
 #include "Application.h"
 
 namespace Syns {
+    Application* Application::application = nullptr;
+    
     Application::Application() {
-
+        application = this;
     }
 
     Application::~Application() {
 
     }
 
-    void Application::Run() {
-        while(true);
+    void Application::Update() {
     }
 
     void Application::PushLayer(Layer* layer) {

@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Core.h"
-#include "LayerStack.h"
+#include "core/LayerStack.h"
 
 namespace Syns {
     class SYNS_API Application {
@@ -9,13 +9,16 @@ namespace Syns {
         Application();
         virtual ~Application();
 
-        void Run();
+        void Update();
 
         void PushLayer(Layer* layer);
         void PushOverlay(Layer* overlay);
+        Application* GetApplication() { return application; }
     private:
+        static Application* application;
         LayerStack stack;
     };
 
     Application* CreateApplication();
+
 }
